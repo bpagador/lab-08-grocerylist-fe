@@ -4,12 +4,12 @@ import GroceryItem from './GroceryItem'
 
 export default class GroceryList extends Component {
     state = {
-        initSearch: 'Whatever',
+        search: '',
         groceryData: []
     }
 
     async componentDidMount() {
-        const allGroceries = await request.get(`https://powerful-lake-09317.herokuapp.com/${this.state.initSearch}`)
+        const allGroceries = await request.get(`https://powerful-lake-09317.herokuapp.com/grocery_list/${this.state.search}`)
         
         this.setState({ groceryData: allGroceries.body })
     }

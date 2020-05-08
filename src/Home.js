@@ -9,12 +9,12 @@ export default class Home extends Component {
                 <header>
                     Quaratine Grocery Shopping
                     <nav>
-                        <Link to='/grocery_list'>
+                        <Link to='/GroceryList'>
                             <p>My Grocery List</p>
                         </Link>
 
                         <Link to='/AboutMe'>
-                            <p>How Am I Still Aive?</p>
+                            <p>How Am I Still Alive?</p>
                         </Link>    
                     </nav>
                 </header>
