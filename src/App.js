@@ -6,6 +6,8 @@ import {
 
 import Home from './Home';
 import AboutMe from './AboutMe';
+import GroceryList from './GroceryList';
+import DetailPage from './DetailPage';
 
 
 export default class App extends Component {
@@ -17,7 +19,16 @@ export default class App extends Component {
             <Route
             path= '/'
             exact
-            render= {( routerProps ) => < Home {...routerProps} />}
+            render= {( routerProps ) => <Home {...routerProps} />}
+            />
+            <Route
+            path= '/GroceryList'
+            exact
+            render= {( routerProps ) => <GroceryList {...routerProps} />}
+            />
+            <Route
+            path= '/GroceryList/:id'
+            render= {( routerProps ) => <DetailPage {...routerProps} />}
             />
             <Route
             path='/AboutMe'

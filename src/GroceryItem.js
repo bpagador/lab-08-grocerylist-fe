@@ -8,7 +8,7 @@ export default class GroceryItem extends Component {
                     <h1>{this.props.groceryObj.name}</h1>
                     <p>Type: {this.props.groceryObj.type}</p>
                     <p>Amount needed: {this.props.groceryObj.amount}</p>
-                    <p>Cheap?: {this.props.groceryObj.is_cheap}</p>
+                    <p>Cheap?: {String(this.props.groceryObj.is_cheap)}</p>
                 </li>
                 
             </div>
