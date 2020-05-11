@@ -1,38 +1,121 @@
-.App {
+.header {
+  background-color:steelblue;
+  font-family: monospace;
+  font-size: x-large;
+  padding: 30px;
+  margin: 50px;
+  border-radius: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-title {
+  color: rgb(237, 173, 11);
+  text-shadow: rgb(20, 19, 16) 2px 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:link {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+a:hover {
+  color: hotpink;
+}
+
+.home-page {
+  text-align: center;
+}
+.home-intro {
+  border: solid black 2px;
+  padding: 30px;
+  display: inline-block;
+  background-color: wheat;
+  font-family: monospace;
+  font-size: large;
+  color: rgb(2, 99, 2);
+}
+
+.grocery-list-page {
+  text-align: center;
+}
+
+.actual-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: black 3px solid;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+  background-image: url("/grid-paper.jpg");
+  display: inline-block;
+}
+
+.list-item {
+  list-style-type: none;
+  font-family: monospace;
+  font-size: large;
+  font-style: bold;
+  color: goldenrod;
+  text-shadow: black 2px 2px;
+}
+
+.grocery-attributes {
+  font-family: monospace;
+  background-color: pink;
+  text-shadow: white 2px 2px;
+  color: black;
+
+}
+
+.add-detail-page-body {
+  text-align: center;
+}
+
+.form-container {
+  background-color: lightblue;
+  height: 400px;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 50px;
+  padding: 50px;
+}
+
+.page-form {
+  margin: 10px;
+  display: inline-block;
   align-items: center;
+
+}
+
+.input-line {
+  width: 98%;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.input-container {
+  display: flex wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: monospace;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+.about-me-parent {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-me-description {
+  border: black solid 2px;
+  margin: 30px;
+  padding: 30px;
+  display: inline-block;
+  font-family: monospace;
+  font-size: large;
+  background-color: pink;
+  color: black;
+  text-shadow: white 1px 1px;
 }

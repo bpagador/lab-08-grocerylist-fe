@@ -8,6 +8,7 @@ import Home from './Home';
 import AboutMe from './AboutMe';
 import GroceryList from './GroceryList';
 import DetailPage from './DetailPage';
+import AddDetailPage from './AddDetailPage';
 
 
 export default class App extends Component {
@@ -29,6 +30,10 @@ export default class App extends Component {
             <Route
             path= '/GroceryList/:id'
             render= {( routerProps ) => <DetailPage {...routerProps} />}
+            />
+            <Route
+            path='/AddDetailPage'
+            render={( routerProps ) => <AddDetailPage {...routerProps} />}
             />
             <Route
             path='/AboutMe'

@@ -3,6 +3,7 @@ import { getGroceryDetail } from './api-calls.js'
 
 export default class DetailPage extends Component {
     state = { grocery: null }
+    
     componentDidMount = async() => {
         const fetchedData = await getGroceryDetail(this.props.match.params.id)
         console.log(this.props.match.params.id)
@@ -11,7 +12,7 @@ export default class DetailPage extends Component {
     render() {
         return (
             <div>
-                hi
+                
                 {
                     this.state.grocery
                     ? JSON.stringify(this.state.grocery)
