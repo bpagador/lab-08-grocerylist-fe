@@ -29,6 +29,10 @@ export default class AddDetailPage extends Component {
         this.setState(newListState);
     }
 
+    handleFilter = (e) => {
+        this.setState({ filter: e.target.value })
+    }
+
     render() {
         const { name, type, amount, is_cheap } = this.state;
 
